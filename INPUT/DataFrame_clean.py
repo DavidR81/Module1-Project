@@ -15,7 +15,8 @@ tsunami_Sources = tsunami_Sources.drop(['HOUR','MINUTE','CAUSE','FOCAL_DEPTH','S
                                         'INJURY_TOTAL','ALL_HOUSES_DAMAGED','HOUSE_DAMAGE_TOTAL','ALL_HOUSES_DESTROYED',
                                         'HOUSE_DESTRUCTION_TOTAL'], 1)
 
-print(tsunami_Sources.shape)
+
+
 
 
 
