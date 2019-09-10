@@ -31,6 +31,7 @@ tsunami_Sources.COUNTRY[tsunami_Sources.COUNTRY_FRECUENCY > 50].value_counts().p
 #               legend=False, figsize=(12,5), title="Tsunamis frecuency by countries (Year >= 2000)", fontsize=12, alpha=0.5); 
 
 #Se crea un diccionario para acotar las zonas y asi crear un grafico con las regiones costeras mas azotadas por los Tsunamis
+#https://www.ngdc.noaa.gov/nndc/DescribeField.jsp?dataset=101650&search_look=77&field_name=tsevent_vsqp.REGION_CODE --> codigos por regiones
 
 regions = {77:'Costa Oeste de Africa', 78:'Central Africa', 73:'Northeast Atlantic Ocean', 72:'Northwest Atlantic Ocean',
            70:'Southeast Atlantic Ocean', 71:'Southwest Atlantic Ocean', 75:'E. Coast USA and Canada, St Pierre and Miquelon',
@@ -52,6 +53,8 @@ tsunami_Sources.REGIONS[tsunami_Sources.REGIONS_FRECUENCY > 100].value_counts().
 
 #Se crea otro diccionario con los codigos de las causas de los Tsunamis, 
 # con el que se crea otro groupby con CAUSES FRECUENCY y CAUSES para sacar nuevo grafico con las causas de los Tsunamis
+
+#https://www.ngdc.noaa.gov/nndc/DescribeField.jsp?dataset=101650&search_look=77&field_name=tsevent_vsqp.CAUSE_CODE --> codigo por causa
 
 causes = {0:'Unknown', 1:'Earthquake', 2:'Questionable Earthquake', 3:'Earthquake and Landslide', 4:'Volcano and Earthquake',
           5:'Volcano, Earthquake, and Landslide', 6:'Volcano', 7:'Volcano and Landslide', 8:'Landslide', 9:'Meteorological',
